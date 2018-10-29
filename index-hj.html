@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>C간표 - 강의평가 작성</title>
+    <title>SB Admin - Dashboard</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,11 +23,9 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
 
-
   </head>
 
   <body id="page-top">
-
     <!--메인화면 네비게이션 바-->
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
@@ -39,7 +37,11 @@
   <a class="navbar-brand mr-1" href="index.html">C간표</a>  <!--타이틀 네임 임의로 메뉴바와 위치를 바꾸었음-->
       <!-- Navbar Search -->
       <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        
+        <div class="input-group">
+
+            </button>
+          </div>
+        </div>
       </form>
 
       <!-- Navbar -->
@@ -94,47 +96,17 @@
 
         <div class="container-fluid">
 
-          <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item active">후기 작성</li>
-          </ol>
-
-
-          <!-- Page Content -->
-          <div class="jumbotron">
-            <h4 class="write-title">글작성</h4>
-            <div class="form-group submit_button">
-                <select class="custom-select">
-                  <option selected="">교수님을 선택해 주세요.</option>
-                  <option value="1">김상운 교수님</option>
-                  <option value="2">장희정 교수님</option>
-                  <option value="3">김상귀 교수님</option>
-                </select>
+          <!-- Area Chart Example-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-chart-area"></i>
+              나의 이번학기 시간표</div>
+            <div class="card-body">
+              <canvas width="100%" height="47%"></canvas>
+              <h1> 시간표가 들어갈 자리입니다.</h1>
             </div>
-            <div class="form-group submit_button">
-                <select class="custom-select">
-                  <option selected="">과목을 선택해 주세요.</option>
-                  <option value="1">팀 프로젝트1</option>
-                  <option value="2">고급 객체지향 프로그래밍</option>
-                  <option value="3">웹 프로그래밍</option>
-                </select>
-            </div>
-            <div class="form-group">
-              <label class="col-form-label" for="inputDefault">글 제목</label>
-              <input type="text" class="form-control" placeholder="제목을 입력해주세요" id="inputDefault">
-            </div>
-            <div class="form-group">
-              <label for="exampleTextarea">글 내용</label>
-              <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">비밀번호</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 입력해주세요">
-            </div>
-              <form class="submit_button" action=" " method="post">
-                <button type="submit" class="btn btn-success">완료</button>
-              </form>
           </div>
+
         </div>
         <!-- /.container-fluid -->
 
@@ -184,8 +156,17 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
 
   </body>
 

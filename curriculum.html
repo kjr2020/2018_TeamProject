@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
   <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Blank Page</title>
+    <title>Welcome to "C"간표</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,36 +27,28 @@
 
   <body id="page-top">
 
+    <!--메인화면 네비게이션 바-->
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.html">프로젝트 C간표</a>
+
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
-      </button>
-
+      </button><!--메뉴아이콘-->
+  <a class="navbar-brand mr-1" href="index.html">C간표</a>  <!--타이틀 네임 임의로 메뉴바와 위치를 바꾸었음-->
       <!-- Navbar Search -->
       <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
       </form>
 
       <!-- Navbar -->
       <ul class="navbar-nav ml-auto ml-md-0">
+
+        <!--로그인 아이콘 조절-->
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="#">Settings</a>
-            <a class="dropdown-item" href="#">Activity Log</a>
-            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
           </div>
         </li>
@@ -95,23 +87,174 @@
           </div>
         </li>
       </ul>
-
       <div id="content-wrapper">
 
         <div class="container-fluid">
+          <!-- Page Content 페이지 최 상단부 메세지 -->
+          <h1>"Welcome to "C"간표            <INPUT type='BUTTON' value=' ' style="WIDTH: 30pt; HEIGHT: 30pt"></h1>
+          <hr></hr>
+          <!--본문처리-->
+          <p>  </p>
+          <li>전공과목</li>
 
-          <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active">Blank Page</li>
-          </ol>
 
-          <!-- Page Content -->
-          <h1>Blank Page</h1>
-          <hr>
-          <p>This is a great starting point for new custom pages.</p>
+          <div>
+            <div style = position:static; top 100px;left:100px;><img src="이수.png" width="1000" height="500">
+          </div>
+
+                <div style = "position:relative; top:-430px;left:55px;"><input type="checkbox" id="a">
+                </div>
+                <div style = "position:relative; top:-430px;left:0px;"><input type="checkbox" id="a">
+                </div>
+                <div style = "position:relative; top:-430px;left:100px;"><input type="checkbox" id="a">
+                </div>
+                <div style = "position:relative; top:-430px;left:100px;"><input type="checkbox" id="a">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+          <hr></hr>
+          <li>교양과목</li>
+
+
+
+          <style>
+                table {
+                  width: 100%;
+                }
+                table, th, td {
+                  border: 1px solid #bcbcbc;
+                }
+              </style>
+
+          <table>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>교과목명</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr><!--첫줄-->
+                  <th rowspan="3"><input type="checkbox" id="a">기독교</th>
+                  <td><input type="checkbox" id="a">종교와 과학</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" id="a">현대사회와 기독교 윤리</th>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" id="a">기독교와 사회</th>
+                </tr>
+
+                <th rowspan="2"><input type="checkbox" id="a">사고와표현</th>
+                <td><input type="checkbox" id="a">글쓰기</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="a">발표와 토의</th>
+              </tr>
+
+              <th rowspan="3"><input type="checkbox" id="a">역사와 철학</th>
+              <td><input type="checkbox" id="a">철학과 인간</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="a">한국 근현대사의 이해</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="a">역사와 문명</td>
+            </tr>
+
+            <th rowspan="3"><input type="checkbox" id="a">사회와 공동체</th>
+            <td><input type="checkbox" id="a">세계화와 사회변화</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">민주주의와 현대사회</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">여성 소수자 공동체</td>
+            </tr>
+
+            <th rowspan="3"><input type="checkbox" id="a">문화</th>
+            <td><input type="checkbox" id="a">글로벌 문화</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">예술과 창조성</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">고전으로 읽는 인문학</td>
+            </tr>
+
+            <th rowspan="3"><input type="checkbox" id="a">과학과 기술</th>
+            <td><input type="checkbox" id="a">환경과 인간</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">우주 생명 마음</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">창업 입문</td>
+            </tr>
+
+            <th rowspan="4"><input type="checkbox" id="a">영어</th>
+            <td><input type="checkbox" id="a">영어1</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">영어2</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">영어회화1&3</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">영어회화2&4</td>
+            </tr>
+
+            <th rowspan="3"><input type="checkbox" id="a">기초과학</th>
+            <td><input type="checkbox" id="a">물리학1</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">물리학실험1</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">일반생물학</td>
+            </tr>
+
+            <th rowspan="6"><input type="checkbox" id="a">수학</th>
+            <td><input type="checkbox" id="a">미적분학1</td>
+            <tr>
+            <td><input type="checkbox" id="a">이산수학개론</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">고급이산수학</td>
+          </tr>
+            <tr>
+            <td><input type="checkbox" id="a">선형대수학개론</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">공학수학</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" id="a">통계학개론</td>
+            </tr>
+
+
+
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">Table Foot</td>
+                </tr>
+              </tfoot>
+            </table>
+
+
+
+
+
 
         </div>
         <!-- /.container-fluid -->
@@ -136,17 +279,16 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
+    <!-- Logout Modal 로그아웃 아이콘 눌렀을때 어쩌지?-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">로그아웃 하시겠습니까?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
           </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
             <a class="btn btn-primary" href="login.html">Logout</a>
