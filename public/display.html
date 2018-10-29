@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <script>
+    let complete = function(){
+      opener.location = "index.html";
+      self.close();
+    }
+  </script>
+</head>
+<body>
+  <h1>HEADER</h1>
+  <input type="button" id="ok" class="button1" value="ok" onclick="complete();">
+  <input type="button" id="back" class="button2" value="back" onclick="location.href = 'scheduleMaker.html'">
+</body>
+</html>
