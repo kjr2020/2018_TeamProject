@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <!-- 나중에는 서버에서 받아와야 할 자료 -->
     <script src="js\dataContainer.js"></script>
     <script type="text/javascript">
     let ckbx = document.getElementsByName('b');
@@ -16,14 +16,8 @@
       window.open("tableOption.html","","width=400, height=400, left=100, top=50");
       for(let i = 0; i < ckbx.length; i++){
         if(ckbx[i].checked){
-          //sendData(lecture[i]);//dataContainer에 저장된 lecture 중 lecture[i]를 전송한다.
+          alert("체크된 강의를 데이터베이스로 보내는 함수.");
         }
-      }
-    }
-    // 체크박스 클릭 시 데이터 기록
-    let check = function(){
-      for (let i = 0; i < ckbx.length; i++) {
-        if(ckbx[i].checked) alert(ckbx[i].checked);
       }
     }
     </script>
@@ -269,7 +263,6 @@
                 <tr>
                   <td>Table Foot</td>
                   <td><!-- 체크박스에 대한 확인 -->
-                  <a href="javascript:check();">체크박스 확인</a>
                   <input type="button" name="makeTable" value="시간표 생성" onclick="makePop();">
                   </td>
                 </tr>
