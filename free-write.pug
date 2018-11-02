@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
-    title C간표 - 자유 게시판
+    title C간표 - 글쓰기
     // Bootstrap core CSS
     link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     // Custom fonts for this template
@@ -65,14 +65,18 @@ html(lang='en')
             h4.write-title 글작성
             hr.my-4
             .form-group
+              //글의 제목이 들어갈 곳
               label.col-form-label(for='inputDefault') 글 제목
               input#inputDefault.form-control(type='text', placeholder='제목을 입력해주세요')
             .form-group
+              //글의 내용이 들어갈 곳
               label(for='exampleTextarea') 글 내용
               textarea#exampleTextarea.form-control(rows='6')
             .form-group
+              //글의 수정 삭제를 위한 비밀번호가 들어갈 곳
               label(for='exampleInputPassword1') 비밀번호
               input#exampleInputPassword1.form-control(type='password', placeholder='비밀번호를 입력해주세요')
+            //글 등록을 위한 완료 버튼
             form.submit_button(action=' ', method='post')
               button.btn.btn-success(type='submit') 완료
       // /.container-fluid

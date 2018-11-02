@@ -73,21 +73,18 @@ html(lang='en')
                   th.cols4(scope='row ') 작성자
               tbody
                 tr
-                  td.cols1(onclick="location.href='userwrite1'") 1
-                  td.cols2(onclick="location.href='userwrite1'") 팀프
-                  td.cols3(onclick="location.href='userwrite1'") 팀프 너무 재밋어요
-                  td.cols4 60151111
-                tr
-                  td.cols1 2
-                  td.cols2 팀프
-                  td.cols3 팀프 너무 즐거워요
-                  td.cols4 60161111
-                tr
-                  td.cols1 3
-                  td.cols2 고급객체
-                  td.cols3 고객 같이 팀하실분 있나요?
-                  td.cols4 60161111
+                  //글 번호가 들어갈 곳
+                  td.cols1(onclick="location.href='userwrite1'") 글번호
+                  //글 제목이 들어갈 곳
+                  td.cols2(onclick="location.href='userwrite1'") 글제목
+                  //글 내용이 들어갈 곳
+                  td.cols3(onclick="location.href='userwrite1'") 글내용
+                  //작성자 id나 학번이 들어갈 곳
+                  td.cols4 작성자정보
+                  //2, 3 번은 그냥지울게
+              
           div
+            //글쓰기 페이지로 넘어가는 버튼
             form.submit_button(action='free-write')
               button.btn.btn-success(type='submit') 글 작성
         // /.container-fluid

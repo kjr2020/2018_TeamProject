@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
-    title C간표 - 강의평가 작성
+    title C간표 - 강의 평가 작성
     // Bootstrap core CSS
     link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     // Custom fonts for this template
@@ -63,27 +63,33 @@ html(lang='en')
           // Page Content
           .jumbotron
             h4.write-title 글작성
+            //강의 평가를 등록하기위해 교수님을 선택하는 메뉴
             .form-group.submit_button
               select.custom-select
                 option(selected='') 교수님을 선택해 주세요.
                 option(value='1') 김상운 교수님
                 option(value='2') 장희정 교수님
                 option(value='3') 김상귀 교수님
+            //강의 평가를 등록하기 위해 과목을 선택하는 메뉴
             .form-group.submit_button
               select.custom-select
                 option(selected='') 과목을 선택해 주세요.
                 option(value='1') 팀 프로젝트1
                 option(value='2') 고급 객체지향 프로그래밍
                 option(value='3') 웹 프로그래밍
+            //강의평가의 제목을 입력하는 곳
             .form-group
               label.col-form-label(for='inputDefault') 글 제목
               input#inputDefault.form-control(type='text', placeholder='제목을 입력해주세요')
+            //강의 평가의 내용을 입력하는 곳
             .form-group
               label(for='exampleTextarea') 글 내용
               textarea#exampleTextarea.form-control(rows='6')
+            //강의 평가의 수정이나 삭제를 위해 비밀번호를 입력하는 곳
             .form-group
               label(for='exampleInputPassword1') 비밀번호
               input#exampleInputPassword1.form-control(type='password', placeholder='비밀번호를 입력해주세요')
+            //강의평가를 등록하기 위한 버튼
             form.submit_button(action=' ', method='post')
               button.btn.btn-success(type='submit') 완료
         // /.container-fluid

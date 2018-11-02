@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
-    title SB Admin - Blank Page
+    title C간표 - 강의 평가
     // Bootstrap core CSS
     link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     // Custom fonts for this template
@@ -65,6 +65,7 @@ html(lang='en')
           // Page Content
           .card
             ul
+              //강의 평가를 등록하거나 검색하기 위해 교수님을 선택하는 메뉴
               li.no-display
                 .form-group
                   select.custom-select
@@ -72,6 +73,7 @@ html(lang='en')
                     option(value='1') 김상운 교수님
                     option(value='2') 장희정 교수님
                     option(value='3') 김상귀 교수님
+              //강의평가를 등록하거나 검색하기 위해 과목을 선택하는 메뉴
               li.no-display
                 .form-group
                   select.custom-select
@@ -80,8 +82,10 @@ html(lang='en')
                     option(value='2') 고급 객체지향 프로그래밍
                     option(value='3') 웹 프로그래밍
             div
+              //강의 평가를 작성하는 페이지로 이동하는 버튼 - 교수님과 과목 선택안함
               form.submit_button(action='lecture-review')
                 button.btn.btn-success(type='submit') 평가 작성
+              //선택한 교수님과 과목에 등록된 강의평가를 검색하는 버튼
               form.lecture-select-btn(action='lecture-result')
                 button.btn.btn-info(type='submit') 검색
         // /.container-fluid

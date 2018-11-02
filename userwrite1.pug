@@ -59,16 +59,20 @@ html(lang='en')
         .container-fluid
           // Breadcrumbs
           ol.breadcrumb
+            //DB에서 게시물의 번호를 불러와서 호출해주는 곳
             li.breadcrumb-item.active n 번째 게시물
           // Page Content
           .jumbotron
+            //DB에서 글의 제목을 불러오는 곳
             p.text_extned1
               strong 제목 :
               | 팀프
             hr.my-4
             b.text_extend 내용 :
+            //DB에서 글의 내용을 불러오는 곳
             .white_jumbotron
               p.lead 팀프 너무 재밋어요
+            //글의 수정을 위한 버튼
             form.submit_button(action='.html', method='post')
               button.btn.btn-success(type='submit') 수정
         // /.container-fluid

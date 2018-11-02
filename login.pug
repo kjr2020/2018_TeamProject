@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='')
     meta(name='author', content='')
-    title C간표 - 자유 게시판
+    title C간표 - 로그인
     style(media='screen').
       body {
       background-image: url('login_background1.jpg');
@@ -25,8 +25,10 @@ html(lang='en')
     .jumbotron.login_object.login_background
       .form-group
         label(for='exampleInputEmail1') 학번을 입력해주세요
+        //로그인을 위해 학번을 입력받기 위한 곳
         input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter Your Number')
         small#emailHelp.form-text.text-muted We'll never share your Number with anyone else.
+        //등록된 학번인지 확인후 등록된 학번이 맞을 경우 메인 페이지로 갈 수 있는 로그인 버튼
         form.submit_button(action='index', method='post')
           button.btn.btn-info(type='submit') 로그인
     // Bootstrap core JavaScript

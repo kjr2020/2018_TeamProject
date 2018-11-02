@@ -73,21 +73,13 @@ html(lang='en')
                   th.cols4(scope='row ') 작성자
               tbody
                 tr
-                  td.cols1 1
-                  td.cols2 팀프 질문이요
-                  td.cols3 팀프 재미있나요?
-                  td.cols4 60151111
-                tr
-                  td.cols1 2
-                  td.cols2 수강 철회 질문이요
-                  td.cols3 팀프 철회해도 졸업할수있나요?
-                  td.cols4 60161111
-                tr
-                  td.cols1 3
-                  td.cols2 고급객체 질문이요
-                  td.cols3 고객 같이 팀하실분 있나요?
-                  td.cols4 60161111
+                  //게시글의 번호가 들어갈 곳
+                  td.cols1 글번호
+                  td.cols2 제목
+                  td.cols3 내용
+                  td.cols4 학번/id
           div
+            //글 작성 완료를 위한 버튼
             form.submit_button(action='free-write')
               button.btn.btn-success(type='submit') 글 작성
         // /.container-fluid
