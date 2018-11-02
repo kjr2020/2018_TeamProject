@@ -1,0 +1,209 @@
+doctype html
+html(lang='kr')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Welcome to "C"간표
+    // Bootstrap core CSS
+    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom fonts for this template
+    link(href='vendor/fontawesome-free/css/all.min.css', rel='stylesheet', type='text/css')
+    // Page level plugin CSS
+    link(href='vendor/datatables/dataTables.bootstrap4.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/sb-admin.css', rel='stylesheet')
+  body#page-top
+    nav.navbar.navbar-expand.navbar-dark.bg-dark.static-top
+      button#sidebarToggle.btn.btn-link.btn-sm.text-white.order-1.order-sm-0(href='#')
+        i.fas.fa-bars
+      // 메뉴아이콘
+      a.navbar-brand.mr-1(href='index') C간표
+      // 타이틀 네임 임의로 메뉴바와 위치를 바꾸었음
+      // Navbar Search
+      form.d-none.d-md-inline-block.form-inline.ml-auto.mr-0.mr-md-3.my-2.my-md-0
+      // Navbar
+      ul.navbar-nav.ml-auto.ml-md-0
+        // 로그인 아이콘 조절
+        li.nav-item.dropdown.no-arrow
+          a#userDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.fas.fa-user-circle.fa-fw
+          .dropdown-menu.dropdown-menu-right(aria-labelledby='userDropdown')
+            a.dropdown-item(href='#', data-toggle='modal', data-target='#logoutModal') Logout
+    #wrapper
+      // 측면 보드 설정
+      // Sidebar
+      ul.sidebar.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='index')
+            i.fas.fa-fw.fa-calendar-check
+            span 나의 시간표
+        li.nav-item
+          a.nav-link(href='curriculum')
+            i.fas.fa-fw.fa-chart-area
+            span 커리큘럼
+        li.nav-item
+          a.nav-link(href='lecture-evaluation')
+            i.fas.fa-fw.fa-book-reader
+            span 강의 평가
+        li.nav-item.dropdown
+          a#pagesDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.fas.fa-fw.fa-user-friends
+            span 게시판
+          .dropdown-menu(aria-labelledby='pagesDropdown')
+            a.dropdown-item(href='free-community') 자유 게시판
+            a.dropdown-item(href='qna-community') Q&A게시판
+      #content-wrapper
+        .container-fluid
+          // Page Content 페이지 최 상단부 메세지
+          h1 "Welcome to "C"간표
+          hr
+          // 본문처리
+          // -------------------------------------------------------------
+          p
+          p
+          table(cellspacing='5', align='center', border='1', bordercolor='#22223b', width='800', height='600')
+            caption
+              font(size='20')
+                // 여백
+                // 여기서 부터  본문
+                style.
+                  table {
+                  width: 100%;
+                  }
+                  table, th, td {
+                  border: 1px solid #bcbcbc;
+                  }
+                tbody
+                  tr(align='center')
+                    td(width='100', bgcolor='#4a4e69')
+                    td(width='150', bgcolor='#4a4e69')
+                      font(color='#eeeeee')   Mon
+                    td(width='150', bgcolor='#4a4e69')
+                      font(color='#eeeeee')   Tue
+                    td(width='150', bgcolor='#4a4e69')
+                      font(color='#eeeeee')   Wen
+                    td(width='150', bgcolor='#4a4e69')
+                      font(color='#eeeeee')   Thu
+                    td(width='150', bgcolor='#4a4e69')
+                      font(color='#eeeeee')   Fri
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 09
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 10
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 11
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 12
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 01
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 02
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 03
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 04
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 05
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 06
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr(align='center')
+                    td(bgcolor='#4a4e69')
+                      font(color='#eeeeee') 07
+                    td
+                    td
+                    td
+                    td
+                    td
+        // -------------------------------------------------------------------
+        // /.container-fluid
+        // Sticky Footer
+        footer.sticky-footer
+          .container.my-auto
+            .copyright.text-center.my-auto
+              span Copyright © Your Website 2018
+      // /.content-wrapper
+      // /#wrapper
+      // Scroll to Top Button
+      a.scroll-to-top.rounded(href='#page-top')
+        i.fas.fa-angle-up
+      // Logout Modal 로그아웃 아이콘 눌렀을때 어쩌지?
+      #logoutModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog(role='document')
+          .modal-content
+            .modal-header
+              h5#exampleModalLabel.modal-title 로그아웃 하시겠습니까?
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') ×
+            .modal-footer
+              button.btn.btn-secondary(type='button', data-dismiss='modal') Cancel
+              a.btn.btn-primary(href='login') Logout
+      // Bootstrap core JavaScript
+      script(src='vendor/jquery/jquery.min.js')
+      script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+      // Core plugin JavaScript
+      script(src='vendor/jquery-easing/jquery.easing.min.js')
+      // Custom scripts for all pages
+      script(src='js/sb-admin.min.js')
