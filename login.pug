@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title C간표 - 자유 게시판
+    style(media='screen').
+      body {
+      background-image: url('login_background1.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+    // Bootstrap core CSS
+    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom fonts for this template
+    link(href='vendor/fontawesome-free/css/all.min.css', rel='stylesheet', type='text/css')
+    // Page level plugin CSS
+    link(href='vendor/datatables/dataTables.bootstrap4.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/sb-admin.css', rel='stylesheet')
+  body
+    .jumbotron.login_object.login_background
+      .form-group
+        label(for='exampleInputEmail1') 학번을 입력해주세요
+        input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter Your Number')
+        small#emailHelp.form-text.text-muted We'll never share your Number with anyone else.
+        form.submit_button(action='index', method='post')
+          button.btn.btn-info(type='submit') 로그인
+    // Bootstrap core JavaScript
+    script(src='vendor/jquery/jquery.min.js')
+    script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+    // Core plugin JavaScript
+    script(src='vendor/jquery-easing/jquery.easing.min.js')
+    // Custom scripts for all pages
+    script(src='js/sb-admin.min.js')

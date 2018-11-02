@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>C간표 - 자유 게시판</title>
+    <title>SB Admin - Dashboard</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,11 +23,9 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
 
-
   </head>
 
   <body id="page-top">
-
     <!--메인화면 네비게이션 바-->
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
@@ -39,7 +37,11 @@
   <a class="navbar-brand mr-1" href="index.html">C간표</a>  <!--타이틀 네임 임의로 메뉴바와 위치를 바꾸었음-->
       <!-- Navbar Search -->
       <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <div class="input-group">
 
+            </button>
+          </div>
+        </div>
       </form>
 
       <!-- Navbar -->
@@ -94,52 +96,17 @@
 
         <div class="container-fluid">
 
-          <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html">나의 시간표</a>
-            </li>
-            <li class="breadcrumb-item active">자유 게시판</li>
-          </ol>
-
-
-          <!-- Page Content -->
-          <div class="card">
-            <table class="table table-hover">
-              <thead>
-                <tr class="table-title">
-                  <th scope="row" class="cols1">번호</th>
-                  <th scope="row" class="cols2">제&nbsp;&nbsp;&nbsp;목</th>
-                  <th scope="row" class="cols3">내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;용</th>
-                  <th scope="row "class="cols4">작성자</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="cols1" onclick="location.href='userwrite1.html'">1</td>
-                  <td class="cols2" onclick="location.href='userwrite1.html'">팀프</td>
-                  <td class="cols3" onclick="location.href='userwrite1.html'">팀프 너무 재밋어요</td>
-                  <td class="cols4">60151111</td>
-                </tr>
-                <tr>
-                  <td class="cols1">2</td>
-                  <td class="cols2">팀프</td>
-                  <td class="cols3">팀프 너무 즐거워요</td>
-                  <td class="cols4">60161111</td>
-                </tr>
-                <tr>
-                  <td class="cols1">3</td>
-                  <td class="cols2">고급객체</td>
-                  <td class="cols3">고객 같이 팀하실분 있나요?</td>
-                  <td class="cols4">60161111</td>
-                </tr>
-              </table>
+          <!-- Area Chart Example-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-chart-area"></i>
+              나의 이번학기 시간표</div>
+            <div class="card-body">
+              <canvas width="100%" height="47%"></canvas>
+              <h1> 시간표가 들어갈 자리입니다.</h1>
+            </div>
           </div>
-          <div>
-            <form class="submit_button" action="free-write.html">
-              <button type="submit" class="btn btn-success">글 작성</button>
-            </form>
-          </div>
+
         </div>
         <!-- /.container-fluid -->
 
@@ -189,8 +156,17 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
 
   </body>
 
