@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	   <meta charset="utf-8">
+	    <title>자바스크립트 연습</title>
+	     <style type="text/css">
+		     table, tr, td{
+			        border : 1px solid black;
+			           text-align: center;
+                 width: 100%;
+                 height:50px;
+		             }
+		     td{
+            border: none;
+			        width: 50px;
+		             }
+        .td0{background-color: #F6ECE9;
+             color: #F1DED8;}
+        .td1{background-color: #F37F7F;
+             color: #DAC3BC;}
+        .td2{background-color: #D56653;
+             color: #F1DED8;}
+        .td3{background-color: #FCC96A;
+             color: #F1DED8;}
+        .td4{background-color: #FB4D6E;
+             color: #F1DED8;}
+        .td5{background-color: #A04235;
+             color: #F1DED8;}
+        .td6{background-color: #FB7765;
+             color: #F1DED8;}
+        .td7{background-color: #F46286;
+             color: #F1DED8;}
+        .td8{background-color: #FB7344;
+             color: #F1DED8;}
+        .td9{background-color: #D9A593;
+                  color: #000000;}
+        .td10{background-color: #D49681;
+              color: #000000;
+            }
+      </style>
+	    <script type="text/javascript">
+        //공강0 웹프로그래밍 1 공소2 엑셀3 고인문4 역문5 고객6 팀프로7 채플8
+        //let sample = "000001414004100008002005035050362603620007000070000700000000"
+        let sample =   "012340008012345678012345678012345678012345678012345678012345"
+
+        let ss =["","웹프로그래밍","공개sw실무","엑셀","고전인문학","역사와문명",
+                    "고급객체지향 프로그래밍","팀프로젝트","채플"];
+        let i,j,k=0,l=1;
+        let m=9;
+        //<tr> 표의 각 단 앞머리 =줄수표시
+        //<td> 각 줄을 가로로 채워 나간다
+		    document.write("<table>");
+        document.write("<tr>");
+        document.write("<td></td>");
+        document.write("<td class = td9>월</td>");
+        document.write("<td class = td9>화</td>");
+        document.write("<td class = td9>수</td>");
+        document.write("<td class = td9>목</td>");
+        document.write("<td class = td9>금</td>");
+        document.write("</tr>");
+        //////////////////////////////////
+        for(i=0;i<12;i++){
+          document.write("<tr>");
+          document.write("<td class = td10>"+m+"</td>");
+            if(m>=12){m=m-12;}
+            m++;
+          for(j=0;j<5;j++){
+            document.write("<td class = td"+sample.substring(k,l)+">"+ss[sample.substring(k,l)]+"</td>");
+          //  num++;
+            k++;
+            l++;
+          }
+
+          document.write("</tr>");
+        }
+
+		     document.write("</table>");
+
+       </script>
+  </head>
+  <body>
+
+  </body>
+</html>
