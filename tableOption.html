@@ -19,8 +19,10 @@
           if(ckbx2[i].checked || ckbx2[i].selected){
             optionFunc[i]();
             alert("체크된 옵션을 데이터베이스로 보내는 함수.");
+            checkCollection.collectOpt(ckbx2[i].value, (ckbx2[i].checked || ckbx2[i].selected));
           }
         }
+        checkCollection.check2();
         location.href = 'displayTable.html';
       }
     </script>
@@ -61,19 +63,19 @@
           </tr>
           <tr>
             <td><select multiple="multiple">
-              <option name="option">~15</option>
-              <option name="option">~16</option>
-              <option name="option">~17</option>
-              <option name="option">~18</option>
+              <option name="option" value="~15">~15</option>
+              <option name="option" value="~16">~16</option>
+              <option name="option" value="~17">~17</option>
+              <option name="option" value="~18">~18</option>
             </select></td>
             <td><label>마지막 강의 종료 시간</label></td>
           </tr>
           <tr>
             <td>
               <select multiple="multiple">
-                <option name="option" value="">Jang</option>
-                <option name="option" value="">Yong</option>
-                <option name="option" value="">Han</option>
+                <option name="option" value="Jang">Jang</option>
+                <option name="option" value="Yong">Yong</option>
+                <option name="option" value="Han">Han</option>
               </select>
             </td>
             <td><label for="">교수님 선택(ctrl+클릭 : 다중선택)</label></td>

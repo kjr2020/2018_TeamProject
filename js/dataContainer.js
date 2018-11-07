@@ -66,3 +66,37 @@ let optionFunc = [
   function(){alert("Yong 교수님");},
   function(){alert("Han 교수님");},
 ]
+
+let checkCollection = {
+  lecture  : {
+    name    : new Array(),
+    checked : new Array(),
+  },
+  option   : {
+    name    : new Array(),
+    checked : new Array(),
+  },
+  collectLect : function(str, ck){
+    this.lecture.name.push(str);
+    this.lecture.checked.push(ck);
+  },
+  collectOpt  : function(str, ck){
+    this.option.name.push(str);
+    this.option.checked.push(ck);
+  },
+  sendData : function(){
+    alert("checkCollection의 자료들을 데이터베이스에 넘겨주는 함수.");
+  },
+  check1 : function(){
+    for(let i = 0; i < this.lecture.name.length; i++){
+      alert(this.lecture.name[i]);
+      alert(this.lecture.checked[i]);
+    }
+  },
+  check2 : function(){
+    for(let i = 0; i < this.option.name.length; i++){
+      alert(this.option.name[i]);
+      alert(this.option.checked[i]);
+    }
+  },
+}

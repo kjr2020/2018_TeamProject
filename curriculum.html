@@ -17,9 +17,12 @@
       for(let i = 0; i < ckbx.length; i++){
         if(ckbx[i].checked){
           alert("체크된 강의를 데이터베이스로 보내는 함수.");
+          checkCollection.collectLect(ckbx[i].value, ckbx[i].checked);
         }
       }
+      checkCollection.check1();
     }
+
     </script>
 
     <title>Welcome to "C"간표</title>
@@ -158,102 +161,102 @@
               </thead>
               <tbody>
                 <tr><!--첫줄-->
-                  <th rowspan="3"><input type="checkbox" name="b">기독교</th>
-                  <td><input type="checkbox" name="b">종교와 과학</td>
+                  <th rowspan="3"><input type="checkbox" name="b" value="기독교">기독교</th>
+                  <td><input type="checkbox" name="b" value="종교와 과학">종교와 과학</td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox" name="b">현대사회와 기독교 윤리</th>
+                  <td><input type="checkbox" name="b" value="현대사회와 기독교 윤리">현대사회와 기독교 윤리</th>
                 </tr>
                 <tr>
-                  <td><input type="checkbox" name="b">기독교와 사회</th>
+                  <td><input type="checkbox" name="b" value="기독교와 사회">기독교와 사회</th>
                 </tr>
 
-                <th rowspan="2"><input type="checkbox" name="b">사고와표현</th>
-                <td><input type="checkbox" name="b">글쓰기</td>
+                <th rowspan="2"><input type="checkbox" name="b" value="사고와 표현">사고와표현</th>
+                <td><input type="checkbox" name="b" value="글쓰기">글쓰기</td>
               </tr>
               <tr>
-                <td><input type="checkbox" name="b">발표와 토의</th>
+                <td><input type="checkbox" name="b" value="발표와 토의">발표와 토의</th>
               </tr>
 
-              <th rowspan="3"><input type="checkbox" name="b">역사와 철학</th>
-              <td><input type="checkbox" name="b">철학과 인간</td>
+              <th rowspan="3"><input type="checkbox" name="b" value="역사와 철학">역사와 철학</th>
+              <td><input type="checkbox" name="b" value="철학과 인간">철학과 인간</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="b">한국 근현대사의 이해</td>
+              <td><input type="checkbox" name="b" value="한국 근현대사의 이해">한국 근현대사의 이해</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="b">역사와 문명</td>
+              <td><input type="checkbox" name="b" value="역사와 문명">역사와 문명</td>
             </tr>
 
-            <th rowspan="3"><input type="checkbox" name="b">사회와 공동체</th>
-            <td><input type="checkbox" name="b">세계화와 사회변화</td>
+            <th rowspan="3"><input type="checkbox" name="b" value="사회와 공동체">사회와 공동체</th>
+            <td><input type="checkbox" name="b" value="세계화와 사회변화">세계화와 사회변화</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">민주주의와 현대사회</td>
+            <td><input type="checkbox" name="b" value="민주주의와 현대사회">민주주의와 현대사회</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">여성 소수자 공동체</td>
+            <td><input type="checkbox" name="b" value="여성 소수자 공동체">여성 소수자 공동체</td>
             </tr>
 
-            <th rowspan="3"><input type="checkbox" name="b">문화</th>
-            <td><input type="checkbox" name="b">글로벌 문화</td>
+            <th rowspan="3"><input type="checkbox" name="b" value="문화">문화</th>
+            <td><input type="checkbox" name="b" value="글로벌 문화">글로벌 문화</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">예술과 창조성</td>
+            <td><input type="checkbox" name="b" value="예술과 창조성">예술과 창조성</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">고전으로 읽는 인문학</td>
+            <td><input type="checkbox" name="b" value="고전으로 읽는 인문학">고전으로 읽는 인문학</td>
             </tr>
 
-            <th rowspan="3"><input type="checkbox" name="b">과학과 기술</th>
-            <td><input type="checkbox" name="b">환경과 인간</td>
+            <th rowspan="3"><input type="checkbox" name="b" value="과학과 기술">과학과 기술</th>
+            <td><input type="checkbox" name="b" value="환경과 인간">환경과 인간</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">우주 생명 마음</td>
+            <td><input type="checkbox" name="b" value="우주 생명 마음">우주 생명 마음</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">창업 입문</td>
+            <td><input type="checkbox" name="b" value="창업 입문">창업 입문</td>
             </tr>
 
-            <th rowspan="4"><input type="checkbox" name="b">영어</th>
-            <td><input type="checkbox" name="b">영어1</td>
+            <th rowspan="4"><input type="checkbox" name="b" value="영어">영어</th>
+            <td><input type="checkbox" name="b" value="영어1">영어1</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">영어2</td>
+            <td><input type="checkbox" name="b" value="영어2">영어2</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">영어회화1&3</td>
+            <td><input type="checkbox" name="b" value="영어회화1&3">영어회화1&3</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">영어회화2&4</td>
+            <td><input type="checkbox" name="b" value="영어회화2&4">영어회화2&4</td>
             </tr>
 
-            <th rowspan="3"><input type="checkbox" name="b">기초과학</th>
-            <td><input type="checkbox" name="b">물리학1</td>
+            <th rowspan="3"><input type="checkbox" name="b" value="기초과학">기초과학</th>
+            <td><input type="checkbox" name="b" value="물리학1">물리학1</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">물리학실험1</td>
+            <td><input type="checkbox" name="b" value="물리학실험1">물리학실험1</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">일반생물학</td>
+            <td><input type="checkbox" name="b" value="일반생물학">일반생물학</td>
             </tr>
 
-            <th rowspan="6"><input type="checkbox" name="b">수학</th>
-            <td><input type="checkbox" name="b">미적분학1</td>
+            <th rowspan="6"><input type="checkbox" name="b" value="수학">수학</th>
+            <td><input type="checkbox" name="b" value="미적분학1">미적분학1</td>
             <tr>
-            <td><input type="checkbox" name="b">이산수학개론</td>
+            <td><input type="checkbox" name="b" value="이산수학개론">이산수학개론</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">고급이산수학</td>
+            <td><input type="checkbox" name="b" value="고급이산수학">고급이산수학</td>
           </tr>
             <tr>
-            <td><input type="checkbox" name="b">선형대수학개론</td>
+            <td><input type="checkbox" name="b" value="선형대수학개론">선형대수학개론</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">공학수학</td>
+            <td><input type="checkbox" name="b" value="공학수학">공학수학</td>
             </tr>
             <tr>
-            <td><input type="checkbox" name="b">통계학개론</td>
+            <td><input type="checkbox" name="b" value="통계학개론">통계학개론</td>
             </tr>
 
 
