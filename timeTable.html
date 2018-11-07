@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      body{
+        display: align-center;
+      }
+    </style>
+    <script type="text/javascript">
+      // 데이터들을 입력받는다.
+      let lines = document.getElementsByName('line');
+      let receive_lect = new Array();
+      let receive_option = new Array();
+      // 시간표 1차원 배열 6x12
+      let timeTable = new Array(72);
+
+      let init = function(){
+        getData();
+        drawTable();
+        alert("시간표 크기는" + timeTable.length);
+      }
+
+      // 데이터 받아오는 함수
+      let getData = function(){
+        alert("데이터베이스에서 데이터를 받아오는 함수다.");
+      }
+      // 6 x 12 배열
+      let drawTable = function(){
+        alert("받아온 데이터를 이용해 테이블을 그린다.");
+
+      }
+    </script>
+    <title></title>
+  </head>
+  <body onload="init();">
+    <h1>TimeTable</h1>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td></td>
+          <td>Mon</td>
+          <td>Tue</td>
+          <td>Wed</td>
+          <td>Thu</td>
+          <td>Fri</td>
+        </tr>
+        <tr id="line1" name = line>
+          <td>0900</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line2" name = line>
+          <td>1000</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line3" name = line>
+          <td>1100</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line4" name = line>
+          <td>1200</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line5" name = line>
+          <td>1300</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line6" name = line>
+          <td>1400</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line7" name = line>
+          <td>1500</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line8" name = line>
+          <td>1600</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line9" name = line>
+          <td>1700</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line10" name = line>
+          <td>1800</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="line11" name = line>
+          <td>1900</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr id="date">
+          
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

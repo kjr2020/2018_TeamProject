@@ -89,14 +89,12 @@ let checkCollection = {
   },
   check1 : function(){
     for(let i = 0; i < this.lecture.name.length; i++){
-      alert(this.lecture.name[i]);
-      alert(this.lecture.checked[i]);
+      alert(this.lecture.name[i]+"와 "+this.lecture.checked[i]+"가 컨테이너에 저장되었습니다.");
     }
   },
   check2 : function(){
     for(let i = 0; i < this.option.name.length; i++){
-      alert(this.option.name[i]);
-      alert(this.option.checked[i]);
+      alert(this.option.name[i]+"와 "+this.option.checked[i]+"가 컨테이너에 저장되었습니다.");
     }
   },
 }

@@ -18,11 +18,11 @@
         for(let i = 0; i < ckbx2.length; i++){
           if(ckbx2[i].checked || ckbx2[i].selected){
             optionFunc[i]();
-            alert("체크된 옵션을 데이터베이스로 보내는 함수.");
+            checkCollection.sendData(); //데이터베이스로 자료를 넘겨준다.
             checkCollection.collectOpt(ckbx2[i].value, (ckbx2[i].checked || ckbx2[i].selected));
           }
         }
-        checkCollection.check2();
+        checkCollection.check2(); 
         location.href = 'displayTable.html';
       }
     </script>
