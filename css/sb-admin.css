@@ -421,6 +421,7 @@ body.sidebar-toggled footer.sticky-footer {
 
 .submit_button{
   float: right;
+  margin: 5px;
 }
 
 .write-title{
@@ -469,4 +470,15 @@ body.sidebar-toggled footer.sticky-footer {
 
 .login_background{
   background-color: rgba(236, 240, 241, 0);
+}
+
+.float_left{
+  float: left;
+  margin: 5px;
+}
+
+.btn-size{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }

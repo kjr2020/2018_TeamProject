@@ -29,8 +29,12 @@ html(lang='en')
         input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter Your Number')
         small#emailHelp.form-text.text-muted We'll never share your Number with anyone else.
         //등록된 학번인지 확인후 등록된 학번이 맞을 경우 메인 페이지로 갈 수 있는 로그인 버튼
+        form.float_left(action='/kakao', method='post')
+          button.btn.btn-warning(type='submit')
+            img.btn-img.btn-size(src='Kakao.png')
+            | 카카오톡으로 로그인 하기
         form.submit_button(action='index', method='post')
-          button.btn.btn-info(type='submit') 로그인
+          button.btn.btn-info(type='submit') 확인
     // Bootstrap core JavaScript
     script(src='vendor/jquery/jquery.min.js')
     script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
