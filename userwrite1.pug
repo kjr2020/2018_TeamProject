@@ -1,0 +1,107 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title C간표 - 자유 게시판
+    // Bootstrap core CSS
+    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Custom fonts for this template
+    link(href='vendor/fontawesome-free/css/all.min.css', rel='stylesheet', type='text/css')
+    // Page level plugin CSS
+    link(href='vendor/datatables/dataTables.bootstrap4.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/sb-admin.css', rel='stylesheet')
+  body#page-top
+    // 메인화면 네비게이션 바
+    nav.navbar.navbar-expand.navbar-dark.bg-dark.static-top
+      button#sidebarToggle.btn.btn-link.btn-sm.text-white.order-1.order-sm-0(href='#')
+        i.fas.fa-bars
+      // 메뉴아이콘
+      a.navbar-brand.mr-1(href='index.html') C간표
+      // 타이틀 네임 임의로 메뉴바와 위치를 바꾸었음
+      // Navbar Search
+      form.d-none.d-md-inline-block.form-inline.ml-auto.mr-0.mr-md-3.my-2.my-md-0
+      // Navbar
+      ul.navbar-nav.ml-auto.ml-md-0
+        // 로그인 아이콘 조절
+        li.nav-item.dropdown.no-arrow
+          a#userDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.fas.fa-user-circle.fa-fw
+          .dropdown-menu.dropdown-menu-right(aria-labelledby='userDropdown')
+            a.dropdown-item(href='#', data-toggle='modal', data-target='#logoutModal') Logout
+    #wrapper
+      // Sidebar
+      ul.sidebar.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='index.html')
+            i.fas.fa-fw.fa-calendar-check
+            span 나의 시간표
+        li.nav-item
+          a.nav-link(href='curriculum.html')
+            i.fas.fa-fw.fa-chart-area
+            span 커리큘럼
+        li.nav-item
+          a.nav-link(href='lecture-evaluation.html')
+            i.fas.fa-fw.fa-book-reader
+            span 강의 평가
+        li.nav-item.dropdown
+          a#pagesDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.fas.fa-fw.fa-user-friends
+            span 게시판
+          .dropdown-menu(aria-labelledby='pagesDropdown')
+            a.dropdown-item(href='free-community.html') 자유 게시판
+            a.dropdown-item(href='qna-community.html') Q&A게시판
+      #content-wrapper
+        .container-fluid
+          // Breadcrumbs
+          ol.breadcrumb
+            //DB에서 게시물의 번호를 불러와서 호출해주는 곳
+            li.breadcrumb-item.active n 번째 게시물
+          // Page Content
+          .jumbotron
+            //DB에서 글의 제목을 불러오는 곳
+            p.text_extned1
+              strong 제목 :
+              | 팀프
+            hr.my-4
+            b.text_extend 내용 :
+            //DB에서 글의 내용을 불러오는 곳
+            .white_jumbotron
+              p.lead 팀프 너무 재밋어요
+            //글의 수정을 위한 버튼
+            form.submit_button(action='.html', method='post')
+              button.btn.btn-success(type='submit') 수정
+        // /.container-fluid
+        // Sticky Footer
+        footer.sticky-footer
+          .container.my-auto
+            .copyright.text-center.my-auto
+              span Copyright © Your Website 2018
+      // /.content-wrapper
+      // /#wrapper
+      // Scroll to Top Button
+      a.scroll-to-top.rounded(href='#page-top')
+        i.fas.fa-angle-up
+      // Logout Modal
+      #logoutModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog(role='document')
+          .modal-content
+            .modal-header
+              h5#exampleModalLabel.modal-title Ready to Leave?
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') ×
+            .modal-body Select "Logout" below if you are ready to end your current session.
+            .modal-footer
+              button.btn.btn-secondary(type='button', data-dismiss='modal') Cancel
+              a.btn.btn-primary(href='login.html') Logout
+      // Bootstrap core JavaScript
+      script(src='vendor/jquery/jquery.min.js')
+      script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+      // Core plugin JavaScript
+      script(src='vendor/jquery-easing/jquery.easing.min.js')
+      // Custom scripts for all pages
+      script(src='js/sb-admin.min.js')

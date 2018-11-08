@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>C간표 - 자유 게시판</title>
+    <title>C간표 - 강의평가 작성</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
   <a class="navbar-brand mr-1" href="index.html">C간표</a>  <!--타이틀 네임 임의로 메뉴바와 위치를 바꾸었음-->
       <!-- Navbar Search -->
       <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-
+        
       </form>
 
       <!-- Navbar -->
@@ -96,49 +96,44 @@
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html">나의 시간표</a>
-            </li>
-            <li class="breadcrumb-item active">자유 게시판</li>
+            <li class="breadcrumb-item active">후기 작성</li>
           </ol>
 
 
           <!-- Page Content -->
-          <div class="card">
-            <table class="table table-hover">
-              <thead>
-                <tr class="table-title">
-                  <th scope="row" class="cols1">번호</th>
-                  <th scope="row" class="cols2">제&nbsp;&nbsp;&nbsp;목</th>
-                  <th scope="row" class="cols3">내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;용</th>
-                  <th scope="row "class="cols4">작성자</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="cols1" onclick="location.href='userwrite1.html'">1</td>
-                  <td class="cols2" onclick="location.href='userwrite1.html'">팀프</td>
-                  <td class="cols3" onclick="location.href='userwrite1.html'">팀프 너무 재밋어요</td>
-                  <td class="cols4">60151111</td>
-                </tr>
-                <tr>
-                  <td class="cols1">2</td>
-                  <td class="cols2">팀프</td>
-                  <td class="cols3">팀프 너무 즐거워요</td>
-                  <td class="cols4">60161111</td>
-                </tr>
-                <tr>
-                  <td class="cols1">3</td>
-                  <td class="cols2">고급객체</td>
-                  <td class="cols3">고객 같이 팀하실분 있나요?</td>
-                  <td class="cols4">60161111</td>
-                </tr>
-              </table>
-          </div>
-          <div>
-            <form class="submit_button" action="free-write.html">
-              <button type="submit" class="btn btn-success">글 작성</button>
-            </form>
+          <div class="jumbotron">
+            <h4 class="write-title">글작성</h4>
+            <div class="form-group submit_button">
+                <select class="custom-select">
+                  <option selected="">교수님을 선택해 주세요.</option>
+                  <option value="1">김상운 교수님</option>
+                  <option value="2">장희정 교수님</option>
+                  <option value="3">김상귀 교수님</option>
+                </select>
+            </div>
+            <div class="form-group submit_button">
+                <select class="custom-select">
+                  <option selected="">과목을 선택해 주세요.</option>
+                  <option value="1">팀 프로젝트1</option>
+                  <option value="2">고급 객체지향 프로그래밍</option>
+                  <option value="3">웹 프로그래밍</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label class="col-form-label" for="inputDefault">글 제목</label>
+              <input type="text" class="form-control" placeholder="제목을 입력해주세요" id="inputDefault">
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea">글 내용</label>
+              <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">비밀번호</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 입력해주세요">
+            </div>
+              <form class="submit_button" action=" " method="post">
+                <button type="submit" class="btn btn-success">완료</button>
+              </form>
           </div>
         </div>
         <!-- /.container-fluid -->
