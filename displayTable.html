@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      let rad = document.getElementsByName('timeTable');
+      let goBack = function(){
+        for (let i = 0; i < rad.length; i++) {
+          if(rad[i].checked){
+            alert((i+1) + "번 째 시간표를 생성한다.");
+          }
+        }
+        opener.location = "index.html";
+        self.close();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>DisplayTT</h1>
+    <form class="" action="index.html" method="get">
+    <table border="1">
+      <thead>
+        <tr>
+          <td><input type="radio" name="timeTable" value=""></td>
+          <td><input type="radio" name="timeTable" value=""></td>
+          <td><input type="radio" name="timeTable" value=""></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>옵션 무시</td>
+          <td>기본 옵션 적용(교수, 시간 등)</td>
+          <td>추가 옵션 적용</td>
+        </tr>
+        <tr>
+          <td><iframe src="timeTable.html" height="430"></iframe></td>
+          <td><iframe src="timeTable.html" height="430"></iframe></td>
+          <td><iframe src="timeTable.html" height="430"></iframe></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3"><input type="button" name="" value="Create" onclick="goBack();"></td>
+        </tr>
+      </tfoot>
+    </table>
+    </form>
+  </body>
+</html>
