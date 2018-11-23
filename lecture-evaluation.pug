@@ -65,7 +65,7 @@ html(lang='en')
           // Page Content
           .card
             ul
-              //강의 평가를 등록하거나 검색하기 위해 교수님을 선택하는 메뉴
+              // 강의 평가를 등록하거나 검색하기 위해 교수님을 선택하는 메뉴
               li.no-display
                 .form-group
                   select.custom-select
@@ -73,7 +73,7 @@ html(lang='en')
                     option(value='1') 김상운 교수님
                     option(value='2') 장희정 교수님
                     option(value='3') 김상귀 교수님
-              //강의평가를 등록하거나 검색하기 위해 과목을 선택하는 메뉴
+              // 강의평가를 등록하거나 검색하기 위해 과목을 선택하는 메뉴
               li.no-display
                 .form-group
                   select.custom-select
@@ -82,12 +82,32 @@ html(lang='en')
                     option(value='2') 고급 객체지향 프로그래밍
                     option(value='3') 웹 프로그래밍
             div
-              //강의 평가를 작성하는 페이지로 이동하는 버튼 - 교수님과 과목 선택안함
+              // 강의 평가를 작성하는 페이지로 이동하는 버튼 - 교수님과 과목 선택안함
               form.submit_button(action='lecture-review')
                 button.btn.btn-success(type='submit') 평가 작성
-              //선택한 교수님과 과목에 등록된 강의평가를 검색하는 버튼
+              // 선택한 교수님과 과목에 등록된 강의평가를 검색하는 버튼
               form.lecture-select-btn(action='lecture-result')
                 button.btn.btn-info(type='submit') 검색
+          // 선택한 교수님과 과목에 대해 작성된 강의 평가를 보여주는 부분
+          // 교수님과 과목을 선택하기 전에는 보이지 않음
+          .card
+            // 선택한 교수님과 과목의 이름을 불러와서 제목을 바꿔주는 부분
+            h3
+              small.text-muted ***교수님의 OOO강의 후기 입니다.
+            table.table.table-hover
+              thead
+                tr.table-title
+                  th.cols1(scope='row') 번호
+                  th.cols2(scope='row') 제   목
+                  th.cols3(scope='row') 내      용
+                  th.cols4(scope='row ') 작성자
+              tbody
+                tr
+                  // 게시글의 번호가 들어갈 곳
+                  td.cols1 글번호
+                  td.cols2 제목
+                  td.cols3 내용
+                  td.cols4 학번/id
         // /.container-fluid
         // Sticky Footer
         footer.sticky-footer
